@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Seletores</title>
+
+    <script src="jquery-3.6.1.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+
+            var titulo1 = $("input").val();
+            var titulo2 = $("#campo").html();
+            var titulo3 = $(".texto").html();
+
+
+            alert(titulo1);
+            alert(titulo2);
+            alert(titulo3);
+        })
+        
+    </script>
+</head>
+<body>
+    
+    <input type="text" value="coração" />
+    <h1 id="campo">Titulo em h1</h1>
+    <h2 class="texto"> Texto em h2</h2>
+</body>
+</html>

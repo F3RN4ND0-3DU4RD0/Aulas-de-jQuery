@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Estrutura Base - jQuery</title>
+
+    <script src="jquery-3.6.1.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+
+            $("h1").css("backgroundColor", "red")
+
+            $("p").css({
+                "backgroundColor": "green",
+                "color": "white",
+                "border": "3px dashed black",
+                "borderStyle": "solid"//Quanto mais especifica a ordem, maior a prioridade.
+            })
+        })
+    </script>
+</head>
+
+<body>
+
+    <h1>
+        Não sou faixa preta cumpadi, sou preto inteiris, inteiris.Quem num gosta di mé, boa gentis num é.Posuere libero
+        varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi.Leite de capivaris, leite de mula manquis
+        sem cabeça.
+    </h1>
+
+    <p>Mussum Ipsum, cacilds vidis litro abertis. Praesent vel viverra nisi. Mauris aliquet nunc non turpis scelerisque,
+        eget.Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis.Praesent malesuada urna
+        nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus.Em pé sem cair, deitado sem dormir, sentado sem
+        cochilar e fazendo pose.</p>
+</body>
+
+</html>

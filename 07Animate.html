@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Animate</title>
+
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: black;
+        }
+    </style>
+
+    <script src="jquery-3.6.1.min.js"></script>
+
+    <script>
+
+        //Embora somente veja na outra aula, utilizei aqui o .css()
+
+        $(document).ready(function () {
+            //Modificar para o formato de Círculo
+            $(".circulo").click(function () {
+
+                $("div").animate({
+                    borderRadius: "100%"
+                })
+            })
+
+            //Modificar para o formato de Retângulo
+            $(".retangulo").click(function () {
+
+                $("div").animate({
+                    width: "500px"
+                })
+
+            })
+
+            //Modificar para cor Vermelha
+            $(".vermelho").click(function () {
+
+                $("div").css("background", "red")
+
+            })
+
+            //Modificar para cor Azul
+            $(".azul").click(function () {
+
+
+                $("div").css("background", "blue")
+
+            })
+
+            //Retornar ao que era no começo
+            $(".redefinir").click(function () {
+
+                $("div").animate({
+                    width: "100px",
+                    height: "100px",
+                    borderRadius: 0
+                })
+                $("div").css("background", "black")
+
+            })
+
+
+        })
+    </script>
+</head>
+
+<body>
+    <div></div>
+    <hr>
+    <button class="circulo">Circulo</button>
+    <button class="retangulo">Retângulo</button>
+    <button class="vermelho">Vermelho</button>
+    <button class="azul">Azul</button>
+    <button class="redefinir">Redefinir</button>
+
+
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Slide</title>
+
+    <script src="jquery-3.6.1.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $(".aparecer").click(function(){
+                $(".mensagem").slideDown();
+            })
+    
+            $(".esconder").click(function(){
+                $(".mensagem").slideUp();
+            })
+        })
+    </script>
+</head>
+<body>
+    <h1 class="aparecer">Aparecer</h1>
+    <h1 class="esconder">Esconder</h1>
+    <hr>
+    <h1 class="mensagem">Olá, mundo</h1>
+</body>
+</html>

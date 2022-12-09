@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Estrutura Base - jQuery</title>
+
+    <script src="jquery-3.6.1.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+
+            $("#mostrar").click(function(){
+                $("img").show();
+            });
+            $("#esconder").click(function(){
+                $("img").hide();
+            });
+    
+        });
+    </script>
+</head>
+<body>
+
+    <button id="mostrar">Mostrar</button>    
+    <button id="esconder">Esconder</button>
+    <br>
+
+    <img src="logo_proway.png">
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fade</title>
+
+    <script src="jquery-3.6.1.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("h1").css("display","none");
+            
+            $("#exibir").click(function(){
+                $("h1").fadeIn(3000);
+            });
+            $("#ocultar").click(function(){
+                $("h1").fadeOut("4000");
+            });
+
+            //Meu Teste
+                //Após apertar em "exibir" e aparecer "Aprendendo jQuery", aperte "ocultar" e depois "troque o texto".
+                //Então novamente clique em "exibir".
+                $("#trocar").click(function(){
+                    $("h1").html("Aprendi jQuery");
+                })
+        })
+
+            
+
+    </script>
+</head>
+
+<body>
+    <h1>Aprendendo jQuery</h1>
+    <hr>
+    <button id="exibir">
+        Exibir
+    </button>
+    <button id="ocultar">
+        Ocultar
+    </button>
+    <button id="trocar">Troque o Texto</button>
+</body>
+
+</html>
